@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.sfondo {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px; /* Ridotto il massimo della larghezza */
+    margin: 0 auto;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: padding 0.3s ease;
+}
+
+h1 {
+    color: #ff0000; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: #000; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.schermata p {
+    color: #ff8c00; 
+    margin-bottom: 40px;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input input:focus {
+    border-color: #4CAF50;
+}
+
+.input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.input input:focus + label,
+.input input:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+.flex button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, margin-bottom 0.3s ease;
+    margin-bottom: 35px;
+}
+
+.flex button:hover {
+    background-color: #45a049;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.social p {
+    margin-bottom: 5px;
+    color: #00f;
+}
+
+.bottoni {
+    display: flex;
+    gap: 10px;
+}
+
+.bottoni i {
+    font-size: 24px;
+    color: #ff00ff; 
+}
+
+.accesso {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #ffea00;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accesso:hover {
+    background-color: #47ad4b; 
+}
+
+.checkbox input:checked + label {
+    animation: checkScale 0.3s ease-in-out;
+}
+
+@keyframes checkScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
