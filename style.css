@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    max-width: 600px; /* Ridotto il massimo della larghezza */
+    max-width: 600px;
     margin: 0 auto;
 }
 
